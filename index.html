@@ -120,9 +120,9 @@
             <input type="text" name="How Many" class="form-control" placeholder="How Many" required
               autocomplete="off"><br>
             <input type="date" name="Arrivals" class="form-control" required autocomplete="off"
-              pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" title="YYYY-MM-DD"><br>
+              onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="YYYY-MM-DD"><br>
             <input type="date" name="Leaving" class="form-control" required autocomplete="off"
-              pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" title="YYYY-MM-DD"><br>
+              onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="YYYY-MM-DD"><br>
             <input type="submit" value="Book Now" class="submit" required>
           </form>
         </div>
