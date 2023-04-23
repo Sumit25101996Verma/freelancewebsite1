@@ -194,6 +194,9 @@
     .main-text h1{
         padding: 20px;
     }
+    .book form input{
+        color: black;
+    }
 }
 /* Section Book End */
 
