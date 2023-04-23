@@ -172,15 +172,10 @@
 @media (max-width:850px) {
     .home {
         background-position: 50%;
-        background-size: contain;
     }
 }
 
-@media (max-width:450px) {
-    .home{
-        background-size: contain;
-    }
-    
+@media (max-width:450px) {    
     .home .content h5 {
         font-size: 25px;
     }
