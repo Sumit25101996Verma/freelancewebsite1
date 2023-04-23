@@ -121,9 +121,10 @@
               autocomplete="off"><br>
             <!-- Add a class to the date input fields for easier selection -->
             <input type="text" name="Arrivals" class="form-control datepicker" required autocomplete="off"
-              placeholder="Arrival Date"><br>
+              placeholder="YYYY-MM-DD"><br>
             <input type="text" name="Leaving" class="form-control datepicker" required autocomplete="off"
-              placeholder="Departure Date"><br>
+              placeholder="YYYY-MM-DD"><br>
+
 
             <input type="submit" value="Book Now" class="submit" required>
           </form>
@@ -480,12 +481,10 @@
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
 
-  <!-- Include jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include datepicker.js library -->
+  <link rel="stylesheet" href="https://unpkg.com/datepicker-js/dist/datepicker.min.css">
+  <script src="https://unpkg.com/datepicker-js/dist/datepicker.min.js"></script>
 
-  <!-- Include jQuery UI library -->
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
 </body>
