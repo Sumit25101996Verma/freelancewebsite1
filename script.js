@@ -37,14 +37,13 @@ if (phoneNumber.length >= 8) {
 
 
 // Add the following JavaScript code
-document.addEventListener('DOMContentLoaded', function() {
-  // Select the date input fields by class name and initialize Flatpickr
-  const datepickers = document.querySelectorAll('.datepicker');
-  datepickers.forEach(function(datepicker) {
-    flatpickr(datepicker, {
-      dateFormat: 'Y-m-d', // Set the desired date format
-      allowInput: true, // Allow manual input of date in addition to the date picker
-    });
+$(function() {
+  // Select the date input fields by class name and initialize jQuery UI Datepicker
+  $('.datepicker').datepicker({
+    dateFormat: 'yy-mm-dd', // Set the desired date format
+    showOtherMonths: true, // Show days from other months in the date picker
+    selectOtherMonths: true, // Allow selection of days from other months
+    autoclose: true, // Close the date picker on selecting a date
   });
 });
 
