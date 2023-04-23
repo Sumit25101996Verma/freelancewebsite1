@@ -177,6 +177,10 @@
 }
 
 @media (max-width:450px) {
+    .home{
+        background-size: contain;
+    }
+    
     .home .content h5 {
         font-size: 25px;
     }
