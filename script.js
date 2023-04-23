@@ -36,3 +36,21 @@ if (phoneNumber.length >= 8) {
 });
 
 
+// Detect if the device is a mobile device
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+// If the device is mobile, add a fake placeholder for date input fields
+if (isMobile) {
+  const dateInputs = document.querySelectorAll('input[type="date"]');
+  dateInputs.forEach(input => {
+    const placeholderText = input.getAttribute('placeholder');
+    input.addEventListener('change', () => {
+      if (input.value === '') {
+        input.setAttribute('placeholder', placeholderText);
+      } else {
+        input.removeAttribute('placeholder');
+      }
+    });
+  });
+}
+
