@@ -37,16 +37,19 @@ if (phoneNumber.length >= 8) {
 
 
 // Add the following JavaScript code
-$(function() {
+document.addEventListener('DOMContentLoaded', function() {
   // Select the date input fields by class name and initialize the datepicker
-  $(".datepicker").datepicker({
-    dateFormat: "yy-mm-dd", // Set the desired date format
-    showAnim: "fadeIn", // Set the animation for showing the datepicker
-    changeMonth: true, // Enable changing the month
-    changeYear: true, // Enable changing the year
-    yearRange: "c-100:c+100" // Set the range of years to be shown in the year drop-down
+  const datepickers = document.querySelectorAll('.datepicker');
+  datepickers.forEach(function(datepicker) {
+    new Datepicker(datepicker, {
+      format: 'yyyy-mm-dd', // Set the desired date format
+      autohide: true, // Auto-hide the datepicker when a date is selected
+      buttonClass: 'btn btn-sm', // Set the class for the datepicker button
+      position: 'bottom', // Set the position of the datepicker relative to the input field
+    });
   });
 });
+
 
 
 
