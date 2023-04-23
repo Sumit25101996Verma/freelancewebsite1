@@ -36,6 +36,18 @@ if (phoneNumber.length >= 8) {
 });
 
 
+// Add the following JavaScript code
+$(function() {
+  // Select the date input fields by class name and initialize the datepicker
+  $(".datepicker").datepicker({
+    dateFormat: "yy-mm-dd", // Set the desired date format
+    showAnim: "fadeIn", // Set the animation for showing the datepicker
+    changeMonth: true, // Enable changing the month
+    changeYear: true, // Enable changing the year
+    yearRange: "c-100:c+100" // Set the range of years to be shown in the year drop-down
+  });
+});
+
 
 
 
