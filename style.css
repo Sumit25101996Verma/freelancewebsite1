@@ -168,13 +168,16 @@
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
 }
-.book form textarea{
+
+
+/* .book form textarea{
     border: none;
     border-radius: 10px;
     resize: none;
     box-shadow: 0px 5px 5px -6px black;
     height: 200px;
-}
+} */
+
 .book .submit{
     width: 160px;
     font-size: 16px;
