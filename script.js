@@ -36,16 +36,6 @@ if (phoneNumber.length >= 8) {
 });
 
 
-// Add the following JavaScript code
-$(function() {
-  // Select the date input fields by class name and initialize jQuery UI Datepicker
-  $('.datepicker').datepicker({
-    dateFormat: 'yy-mm-dd', // Set the desired date format
-    showOtherMonths: true, // Show days from other months in the date picker
-    selectOtherMonths: true, // Allow selection of days from other months
-    autoclose: true, // Close the date picker on selecting a date
-  });
-});
 
 
 
