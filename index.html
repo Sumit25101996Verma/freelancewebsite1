@@ -119,10 +119,12 @@
               autocomplete="off"><br>
             <input type="text" name="How Many" class="form-control" placeholder="How Many" required
               autocomplete="off"><br>
-            <input type="date" name="Arrivals" class="form-control" required autocomplete="off"
-              onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="YYYY-MM-DD"><br>
-            <input type="date" name="Leaving" class="form-control" required autocomplete="off"
-              onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="YYYY-MM-DD"><br>
+            <!-- Add a class to the date input fields for easier selection -->
+            <input type="text" name="Arrivals" class="form-control datepicker" required autocomplete="off"
+              placeholder="YYYY-MM-DD"><br>
+            <input type="text" name="Leaving" class="form-control datepicker" required autocomplete="off"
+              placeholder="YYYY-MM-DD"><br>
+
             <input type="submit" value="Book Now" class="submit" required>
           </form>
         </div>
@@ -477,6 +479,14 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
+
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Include jQuery UI library -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 </body>
 
