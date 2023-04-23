@@ -111,27 +111,63 @@
           </div>
         </div>
 
-        <div class="col-md-6 py-3 py-md-0">
+        <!-- <div class="col-md-6 py-3 py-md-0">
           <form action="https://formspree.io/f/mbjepevy" method="POST">
-            <input type="name" name="Name" class="form-control" placeholder="Full Name" minlength="5" maxlength="30"
-              required autocomplete="off"><br>
-            <input type="tel" name="Contact Number" class="form-control" id="phone-input" placeholder="Contact Number"
+            <label for="name-input">Full Name</label>
+            <input type="text" name="Name" class="form-control" id="name-input" placeholder="Full Name" minlength="5"
+              maxlength="30" required autocomplete="off"><br>
+
+            <label for="contact-input">Contact Number</label>
+            <input type="tel" name="Contact Number" class="form-control" id="contact-input" placeholder="Contact Number"
               minlength="10" maxlength="15" required autocomplete="off"><br>
-            <input type="text" name="Where To" class="form-control" placeholder="Where To" required
+
+            <label for="where-input">Where To</label>
+            <input type="text" name="Where To" class="form-control" id="where-input" placeholder="Where To" required
               autocomplete="off"><br>
-            <input type="text" name="How Many" class="form-control" placeholder="How Many" required
+
+            <label for="howmany-input">How Many</label>
+            <input type="text" name="How Many" class="form-control" id="howmany-input" placeholder="How Many" required
               autocomplete="off"><br>
-            <!-- Date input field for Arrival -->
-            <input type="date" name="Arrivals" class="form-control" required autocomplete="off"
+
+            <label for="arrival-input">Arrival Date</label>
+            <input type="date" name="Arrivals" class="form-control" id="arrival-input" required autocomplete="off"
               placeholder="YYYY-MM-DD"><br>
 
-            <!-- Date input field for Leaving -->
-            <input type="date" name="Leaving" class="form-control" required autocomplete="off"
+            <label for="leaving-input">Leaving Date</label>
+            <input type="date" name="Leaving" class="form-control" id="leaving-input" required autocomplete="off"
+              placeholder="YYYY-MM-DD"><br>
+
+            <input type="submit" value="Book Now" class="submit" required>
+          </form>
+        </div> -->
+
+        <div class="col-md-6 py-3 py-md-0">
+          <form action="https://formspree.io/f/mbjepevy" method="POST">
+            <label for="name-input">Full Name</label>
+            <input type="text" name="Name" class="form-control" id="name-input" minlength="5"
+              maxlength="30" required autocomplete="off"><br>
+
+            <label for="contact-input">Contact Number</label>
+            <input type="tel" name="Contact Number" class="form-control" id="contact-input" minlength="10" maxlength="15" required autocomplete="off"><br>
+
+            <label for="where-input">Where To</label>
+            <input type="text" name="Where To" class="form-control" id="where-input" required autocomplete="off"><br>
+
+            <label for="howmany-input">How Many</label>
+            <input type="text" name="How Many" class="form-control" id="howmany-input" required autocomplete="off"><br>
+
+            <label for="arrival-input">Arrival Date</label>
+            <input type="date" name="Arrivals" class="form-control" id="arrival-input" required autocomplete="off"
+              placeholder="YYYY-MM-DD"><br>
+
+            <label for="leaving-input">Leaving Date</label>
+            <input type="date" name="Leaving" class="form-control" id="leaving-input" required autocomplete="off"
               placeholder="YYYY-MM-DD"><br>
 
             <input type="submit" value="Book Now" class="submit" required>
           </form>
         </div>
+
 
 
 
