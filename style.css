@@ -11,7 +11,15 @@
 /* Navbar Start */
 #navbar{
     background: #f9f9f9;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 #logo{
     font-size: 36px;
     font-weight: 550;
@@ -79,17 +87,17 @@
     animation: changetext 10s infinite linear;
 }
 @keyframes changetext{
-    0%{content: "Varansi";}
-    10%{content: "Nainital";}
-    20%{content: "Shimla";}
-    30%{content: "Manali";}
-    40%{content: "Jammu";}
-    50%{content: "Kerala";}
-    60%{content: "Mumbai";}
-    70%{content: "Hyderabad";}
-    80%{content: "Gujarat";}
-    90%{content: "Rajasthan";}
-    100%{content: "Dehradoon";}
+    0%{content: "Varanasi";}
+    10%{content: "Sarnath";}
+    20%{content: "Ramnagar";}
+    30%{content: "Vindhyachal";}
+    40%{content: "Sitamarhi";}
+    50%{content: "Prayagraj";}
+    60%{content: "Ayodhya";}
+    70%{content: "Chitrakut";}
+    80%{content: "Gaya";}
+    90%{content: "Bodhgaya";}
+    100%{content: "Triveni Sangam";}
 } 
 .home .content p{
     color: white;
@@ -208,6 +216,31 @@
     border: none;
     box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
 }
+/* ================== */
+.slideshow {
+    width: 100%;
+    height: 300px; /* adjust height as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slideshow img.active {
+    opacity: 1;
+  }
+  
+
+  /* =================== */
 .packages .card img{
     border-radius: 5px;
 }
@@ -215,7 +248,7 @@
     background: transparent;
 }
 .packages .card .card-body h3{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
 }
 .packages .card .card-body p{
@@ -330,6 +363,60 @@
         padding: 0;
     }
 }
+
+/* .about .label{
+    font-weight: 500;
+    font-size: 20px;
+    
+} */
+
+/* ================ */
+.contact-card {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.contact-card #headerpara{
+    font-weight: 500;
+    color: #333;
+    /* margin-bottom: 30px; */
+}
+
+.contact-card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.contact-card .label {
+    font-weight: bold;
+}
+
+.contact-card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-card button:hover {
+    background-color: #0056b3;
+}
+
+/* ================== */
 /* About End */
 
 
@@ -338,7 +425,7 @@
 /* Footer Start */
 #footer{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;
     background: #f9f9f9;
 }
