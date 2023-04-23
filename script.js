@@ -36,15 +36,6 @@ if (phoneNumber.length >= 8) {
 });
 
 
-// Load flatpickr library from CDN
-const script = document.createElement('script');
-script.src = 'https://cdn.jsdelivr.net/npm/flatpickr';
-document.head.appendChild(script);
 
-// Initialize flatpickr on "Arrivals" and "Leaving" input fields
-script.onload = () => {
-  flatpickr('#arrivals-input', {});
-  flatpickr('#leaving-input', {});
-};
 
 
