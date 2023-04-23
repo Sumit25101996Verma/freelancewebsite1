@@ -36,21 +36,15 @@ if (phoneNumber.length >= 8) {
 });
 
 
-// Detect if the device is a mobile device
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+// Load flatpickr library from CDN
+const script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/npm/flatpickr';
+document.head.appendChild(script);
 
-// If the device is mobile, add a fake placeholder for date input fields
-if (isMobile) {
-  const dateInputs = document.querySelectorAll('input[type="date"]');
-  dateInputs.forEach(input => {
-    const placeholderText = input.getAttribute('placeholder');
-    input.addEventListener('change', () => {
-      if (input.value === '') {
-        input.setAttribute('placeholder', placeholderText);
-      } else {
-        input.removeAttribute('placeholder');
-      }
-    });
-  });
-}
+// Initialize flatpickr on "Arrivals" and "Leaving" input fields
+script.onload = () => {
+  flatpickr('#arrivals-input', {});
+  flatpickr('#leaving-input', {});
+};
+
 
